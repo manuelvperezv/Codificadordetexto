@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang ="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0" >
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="reset.css">        
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
+        
+    </head>    
+    
+    <body class="body">
+
+        <header class="header">
+            
+            <img src="Imagenes/Logoblanco.png" class="logo" name="logoAlura">
+            <h1>Encripta y desencripta tus mensajes</h1>            
+
+        </header> 
+        
+        <main>
+
+            <section class="flex-panel">
+                
+                <div class="panel-input-btns" id="panel-input-btns">
+
+                    <div class="flex-input">
+
+                        <textarea class="ingresarTexto" id="ingresarTexto" name="ingresarTexto" placeholder="Escriba el texto aquí"></textarea required>
+
+                    </div>
+
+                <p class="advertencia" id="advertencia"><span class="simbolo">!</span> Sólo minúsculas y sin acento</p>
+
+                    <div class="botonesEncriptaDesencripta">
+
+                        <button type="button" class="encriptar" id="encriptar" onclick="encriptador()">
+                            <span class="encriptar-icon"><i class="fa fa-lock"></i></span><span class="encriptar-text"><span>Encriptar</span></span>
+                            </button>
+                
+                        <button type="button" class="desencriptar" id="desencriptar" onclick="desencriptador()">
+                           <span class="desencriptar-icon"><i class="fa fa-unlock"></i></span><span class="desencriptar-text"><span>Desencriptar</span></span>
+                            </button>                 
+        
+                    </div>
+                    
+                </div>        
+               
+                <div class="imagen">
+                    
+                    <div class="ocultar-mostrar" id="ocultar-mostrar">                
+                        <img src="Imagenes/muheco.svg" name="muñecoconlacopa" class="muheco">
+                        <p id="p-1" class="p-1">Ningún texto fue encontrado</p> 
+                        <p class="p-2">Ingresa el texto que deseas encriptar o desencriptar</p> 
+                    </div>
+
+                </div>                    
+                
+            </section> 
+            
+
+        </main>
+
+        <footer class="footer">
+
+            <p class="autor"> &copy Manuel Pérez</p>
+
+            <div>
+
+                <ul class="contacto">
+                    <li class="linkedin"><a href="https://www.linkedin.com/in/manuel-pérez-fte"><i class="fa fa-linkedin-square"></i></a></li>
+                    <li><a href="https://github.com/manuelvperezv"><i class="fa fa-github"></i></a></li>
+                </ul>
+
+            </div>
+        </footer>
+
+    </body>   
+   
+    <script src="ocultarImagen.js" type="text/javascript"></script>
+    <script src="encriptar_codifica.js" type="text/javascript"></script>
+    <script src="desencripta_descodifica.js" type="text/javascript"></script>
+    <script src="encriptador.js" type="text/javascript"></script>    
+    <script src="desencriptador.js" type="text/javascript"></script>
+    <script src="copy.js" type="text/javascript"></script>    
+    
+</html>
